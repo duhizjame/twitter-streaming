@@ -1,4 +1,4 @@
-package configs
+package scala.configs
 
 object TwitterConfigurations {
   val CONSUMER_KEY = "TIaSM5jTQmSdb7tL58ErnyNRN"
@@ -7,3 +7,8 @@ object TwitterConfigurations {
   val TOKEN_SECRET = "duuEC9fktqQEzFcVYLC15TXbCUkof2bXmjHafFjct72KM"
   val HASHTAG = "#bigdata"
 }
+
+case class TwitterConfigurations(consumerKey: String,
+                                 consumerSecret: String,
+                                 accessToken: String,
+                                 tokenSecret: String)

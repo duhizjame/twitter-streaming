@@ -2,3 +2,5 @@
 .idea
 creds.txt
 *target*
+project/project
+out
