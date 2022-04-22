@@ -4,3 +4,5 @@ creds.txt
 *target*
 project/project
 out
+commons/src/main/resources/*
+.iml

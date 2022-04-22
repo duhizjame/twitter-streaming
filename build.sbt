@@ -16,6 +16,7 @@ lazy val root = (project in file("."))
     resolvers += "Confluent Repo" at "https://packages.confluent.io/maven",
     resolvers += "Twitter" at "https://maven.twttr.com/",
     libraryDependencies ++= (Dependencies.rootDependencies ++ Dependencies.kafkaClientsDeps),
+    libraryDependencies ++= (Dependencies.twitterAPIs ++ Dependencies.spark),
     libraryDependencies ++= (Dependencies.testDependencies map(_ % Test)),
     fullRunTask(produce, Compile, s"fr.ps.eng.kafka.app4s.client.ProducingApp"),
     fullRunTask(consume, Compile, s"fr.ps.eng.kafka.app4s.client.ConsumingApp")

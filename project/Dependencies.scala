@@ -8,8 +8,16 @@ object Dependencies {
       "com.github.pureconfig" %% "pureconfig" % "0.17.1" ::
       "com.sksamuel.avro4s" %% "avro4s-core" % "3.1.1" ::
       "com.nrinaudo" %% "kantan.csv" % "0.6.1" ::
-      "com.nrinaudo" %% "kantan.csv-enumeratum" % "0.6.1" :: Nil
-//      "com.twitter" %% "hbc-core" % "2.2.0" :: Nil
+      "com.nrinaudo" %% "kantan.csv-enumeratum" % "0.6.1" ::
+      "com.google.code.gson" % "gson" % "2.8.5" :: Nil
+
+  lazy val twitterAPIs: List[ModuleID] =
+    "com.twitter" % "twitter-api-java-sdk" % "1.1.2" :: Nil
+
+  lazy val spark: List[ModuleID] =
+    "org.apache.spark" %% "spark-core" % "2.4.4" ::
+      "org.apache.spark" %% "spark-sql" % "2.4.4" ::
+      "org.apache.spark" %% "spark-streaming" % "2.4.4" :: Nil
 
   lazy val kafkaClientsDeps: List[ModuleID] =
     "org.apache.kafka" % "kafka-clients" % "2.6.0" ::
